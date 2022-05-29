@@ -1,0 +1,127 @@
+*¨{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+
+
+
+.main-header {
+    padding: 0 20px;
+}
+.main-header__title{
+    text-align: center;
+    font-size: 2,5em;
+    margin: 10px 0;
+}
+.main-nav{
+    display: none;
+}
+.main-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.main-header__btn{
+    display: block;
+    padding: 10px 25px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.main-header__input{
+    display: block;
+    padding: 10px;
+}
+
+.container-slider{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 500%;
+    height: 300px;
+    margin-left: -100%;
+    position: relative;
+}
+.slider::before{
+content: "";
+position: absolute;
+top: 0%;
+left: 0%;
+z-index: 1;
+width: 100%;
+background: rgba(0, 0, 0, 0,5);
+height: 100%;
+}
+
+.slider__section{
+    width: 100%;
+    position: relative;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0,7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+.slider__btn:hover{
+    background: rgb(3, 3, 3);
+
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    left: 30px;
+}
+.slider__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%, -50%) ;
+    width: 60%;
+    z-index: 999;
+}
+.btn{
+    
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
